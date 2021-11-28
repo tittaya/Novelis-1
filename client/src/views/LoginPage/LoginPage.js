@@ -2,7 +2,6 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import { Link } from "react-router-dom";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
@@ -139,11 +138,9 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Link to={"/workshop-page"} className={classes.link}>
-                      <Button simple color="primary" size="lg">
-                        Get started
-                      </Button>
-                    </Link>
+                    <Button simple color="primary" size="lg">
+                      Get started
+                    </Button>
                   </CardFooter>
                 </form>
               </Card>
